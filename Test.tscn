@@ -1,0 +1,33 @@
+[gd_scene load_steps=7 format=3 uid="uid://cnk81sxudcqrs"]
+
+[ext_resource type="Shader" path="res://Test4.gdshader" id="1_1gfll"]
+[ext_resource type="Texture2D" uid="uid://bwdsga2q5o3sg" path="res://chicago-skyline-panorama-high-resolution-steve-donlin.jpg" id="1_gxpyt"]
+[ext_resource type="Shader" path="res://Test.gdshader" id="2_uwqsm"]
+[ext_resource type="Texture2D" uid="uid://cs2lhbsaj2wpv" path="res://2d_lights_and_shadows_neutral_point_light.webp" id="3_jm15w"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qtc5x"]
+shader = ExtResource("1_1gfll")
+shader_parameter/acc = 63.7
+shader_parameter/threshold = 0.8
+shader_parameter/compensation = 1.0
+shader_parameter/time_scale = 4.0
+shader_parameter/strength = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_586gy"]
+shader = ExtResource("2_uwqsm")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_qtc5x")
+position = Vector2(-1, 2)
+scale = Vector2(0.616921, 1.53026)
+texture = ExtResource("1_gxpyt")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+material = SubResource("ShaderMaterial_586gy")
+position = Vector2(65, 19)
+energy = 2.69
+blend_mode = 2
+texture = ExtResource("3_jm15w")
+texture_scale = 0.3
