@@ -7,11 +7,12 @@
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_qtc5x"]
 shader = ExtResource("1_1gfll")
-shader_parameter/acc = 63.7
-shader_parameter/threshold = 0.8
-shader_parameter/compensation = 1.0
+shader_parameter/spirals = 126.3
+shader_parameter/threshold = 0.6
+shader_parameter/compensation = 0.705
 shader_parameter/time_scale = 4.0
-shader_parameter/strength = 1.0
+shader_parameter/x_time_scale = 1.0
+shader_parameter/y_time_scale = 1.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_586gy"]
 shader = ExtResource("2_uwqsm")
