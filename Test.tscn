@@ -10,7 +10,7 @@ shader = ExtResource("1_1gfll")
 shader_parameter/spirals = 126.3
 shader_parameter/threshold = 0.6
 shader_parameter/compensation = 0.705
-shader_parameter/time_scale = 4.0
+shader_parameter/time_scale = 3.0
 shader_parameter/x_time_scale = 1.0
 shader_parameter/y_time_scale = 1.0
 
